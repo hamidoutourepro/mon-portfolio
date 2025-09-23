@@ -1,0 +1,557 @@
+.dark {
+    --background: hsl(222.2, 84%, 4.9%);
+    --foreground: hsl(210, 40%, 98%);
+    --muted: hsl(217.2, 32.6%, 17.5%);
+    --muted-foreground: hsl(215, 20.2%, 65.1%);
+    --popover: hsl(222.2, 84%, 4.9%);
+    --popover-foreground: hsl(210, 40%, 98%);
+    --card: hsl(222.2, 84%, 4.9%);
+    --card-foreground: hsl(210, 40%, 98%);
+    --border: hsl(217.2, 32.6%, 17.5%);
+    --input: hsl(217.2, 32.6%, 17.5%);
+    --primary: hsl(217.2, 91.2%, 59.8%);
+    --primary-foreground: hsl(222.2, 47.4%, 11.2%);
+    --secondary: hsl(217.2, 32.6%, 17.5%);
+    --secondary-foreground: hsl(217.2, 32.6%, 17.5%);
+}
+html {
+    scroll-behavior: smooth; /* Active le défilement fluide */
+}
+
+
+body {
+    background-color: var(--background);
+    color: var(--foreground);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.slider {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.slider-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.5);
+}
+/* Navbar principale */
+.navbar {
+    background-color: #2D3436; /* Fond sombre adapté à un site professionnel */
+    padding: 10px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Conteneur de la navbar */
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Logo de la navbar */
+.navbar-logo {
+    color: #63E6BE; /* Une couleur claire pour le logo */
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* Menu de la navbar */
+.navbar-menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+/* Éléments du menu */
+.navbar-menu li {
+    margin: 0 15px;
+}
+
+/* Liens de menu */
+.navbar-menu li a {
+    text-decoration: none;
+    color: #FFFFFF; /* Blanc pour les liens */
+    font-size: 16px;
+    font-weight: 500;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+/* Effet au survol des liens */
+.navbar-menu li a:hover {
+    color: hsl(217.2, 91.2%, 59.8%); /* Une couleur or pour le survol */
+    transform: translateY(-2px); /* Effet de levée lors du survol */
+}
+
+/* Média query pour mobile */
+@media (max-width: 768px) {
+    .navbar-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .navbar-menu {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .navbar-menu li {
+        margin: 10px 0;
+    }
+
+    .navbar-logo {
+        margin-bottom: 20px;
+    }
+}
+
+
+.slider-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: var(--foreground);
+    z-index: 1;
+}
+
+.profile-picture {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    border: 3px solid var(--foreground);
+}
+
+.section {
+    padding: 50px 0;
+}
+
+.boxed {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.w40 {
+    width: 40%;
+}
+
+.w60 {
+    width: 60%;
+}
+
+.expandable-text {
+    max-height: none; /* Affiche le texte complet par défaut */
+    overflow: hidden;
+    line-height: 1.6;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.card {
+    background-color: #333; /* couleur de fond de la carte */
+    border-radius: 8px;
+    padding: 16px;
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-decoration: none; /* Enlever la sous-ligne */
+    color: inherit; /* Hériter la couleur */
+}
+
+/* Styles pour les états du lien */
+.card:link,
+.card:visited,
+.card:hover,
+.card:active {
+    text-decoration: none;
+    color: inherit;
+}
+
+.card-content {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.profile-picture {
+    border-radius: 50%;
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+    margin-right: 16px;
+}
+
+.details {
+    flex-grow: 1;
+}
+
+.username {
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.subscribers {
+    color: #aaaaaa;
+}
+
+.link-icon {
+    color: #ffffff;
+    margin-left: auto;
+    font-size: 1.2em;
+}
+
+.content {
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+    max-width: 80%;
+}
+
+.project-list, .certificate-list {
+    margin-bottom: 40px;
+}
+
+.project-list h2, .certificate-list h2 {
+    font-size: 24px;
+    color: var(--primary);
+    margin-bottom: 20px;
+}
+
+.project-list ul, .certificate-list ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.project-list li, .certificate-list li {
+    background-color: var(--card);
+    border: 1px solid var(--border);
+    margin-bottom: 10px;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.project-list li .details-link, .certificate-list li .details-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: var(--foreground);
+    transition: background-color 0.3s ease;
+}
+
+.project-list li .details-link:hover, .certificate-list li .details-link:hover {
+    background-color: var(--secondary);
+}
+
+.project-list li .icon, .certificate-list li .icon {
+    font-size: 24px;
+    margin-right: 15px;
+}
+
+.project-list li .details, .certificate-list li .details {
+    flex: 1;
+}
+
+.project-list li .details h3, .certificate-list li .details h3 {
+    font-size: 18px;
+    margin: 0;
+    color: var(--primary);
+}
+
+.project-list li .details p, .certificate-list li .details p {
+    margin: 5px 0;
+    color: var(--muted-foreground);
+}
+
+.project-list li .details .date, .certificate-list li .details .date {
+    font-size: 14px;
+    color: var(--muted-foreground);
+}
+
+.view-more {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: var(--primary);
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.view-more:hover {
+    color: var(--primary-foreground);
+}
+
+/* Ajouts pour disposition flexible */
+.content-flex {
+    display: flex;
+    gap: 20px; /* Ajoute un espace entre les deux colonnes */
+}
+
+.project-list, .certificate-list {
+    flex: 1;
+}
+
+/*competences listes */
+
+/* Style pour le conteneur principal */
+.competences-list {
+    display: flex; /* Affichage en flexbox */
+    justify-content: space-between; /* Espacement égal entre les éléments */
+    gap: 20px; /* Espacement entre les éléments (compatible avec les navigateurs récents) */
+    list-style-type: none; /* Supprime les puces des <li> */
+    padding: 30px; /* Espacement à l'intérieur du conteneur principal */
+    border-radius: 8px; /* Coins arrondis */
+}
+
+/* Style pour chaque élément <li> */
+.competences-list li {
+    flex: 1; /* Chaque élément <li> prendra le même espace disponible */
+}
+
+/* Style pour le lien */
+.details-link {
+    text-decoration: none; /* Pas de soulignement sur le lien */
+    color:  #f0f0f0; /* Couleur du texte */
+    display: flex; /* Affichage en flexbox pour aligner les éléments */
+}
+
+/* Style pour l'icône */
+.icon {
+    margin-right: 15px; /* Espacement à droite */
+}
+
+/* Style pour les détails (titre, description, date) */
+.details {
+    flex: 1; /* Remplit l'espace disponible */
+}
+
+/* Style pour le titre */
+.details h3 {
+    font-size: 1.2em; /* Taille du titre */
+    margin-top: 0; /* Pas de marge en haut */
+    color: hsl(217.2, 91.2%, 59.8%);
+}
+
+/* Style pour la description */
+.details p {
+    margin-top: 5px; /* Espacement en haut */
+    line-height: 1.5; /* Hauteur de ligne */
+}
+
+/* Style pour la date */
+.details .date {
+    display: block; /* Affichage en bloc */
+    margin-top: 10px; /* Espacement en haut */
+    font-style: italic; /* Style italique */
+    color: #888; /* Couleur de texte grise */
+}
+
+/*contaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaact*/
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centre verticalement */
+    justify-content: flex-start; /* Aligne les éléments en haut du div */
+    height: 100%; /* Assure que le div contact prend toute la hauteur disponible */
+  }
+  
+  .contact h3 {
+    text-align: center; /* Centre horizontalement */
+  }
+  .contact .container-wrapper {
+    display: flex;
+    justify-content: space-between; /* Espacement équitable entre les éléments */
+    width: 100%; /* Assure que les containers occupent toute la largeur */
+    max-width: 100%; /* Largeur maximale des containers */
+    margin-top: 20px; /* Espacement entre les containers et le titre */
+  }
+  
+  .contact .container1,
+  .contact .container2,
+  .contact .container3 {
+    flex: 1; /* Les containers prennent une part égale de l'espace disponible */
+  }
+  
+  /* Style commun pour les containers */
+  .contact .container1,
+  .contact .container2,
+  .contact .container3 {
+    padding: 50px; /* Espacement interne */
+    text-align: center; /* Centre le contenu */
+    border-radius: 8px; /* Coins arrondis */
+  }
+  
+/* Section Contact */
+.contact-section {
+    background-color: var(--background);
+    color: var(--foreground);
+    padding: 50px 20px;
+    max-width: 600px;
+    margin: 0 auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-section h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: var(--primary);
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: var(--foreground);
+}
+
+.form-group input,
+.form-group textarea {
+    padding: 10px;
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    background-color: var(--input);
+    color: var(--foreground);
+    font-size: 16px;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--primary);
+}
+
+.submit-btn {
+    padding: 15px;
+    background-color: var(--primary);
+    color: var(--primary-foreground);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: var(--primary-foreground);
+    color: var(--primary);
+}
+
+/*parcours*/
+.parcours-section {
+    padding: 50px 20px;
+    background-color: var(--background);
+    color: var(--foreground);
+    max-width: 900px;
+    margin: 0 auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.timeline {
+    position: relative;
+    padding: 20px 0;
+    border-left: 3px solid var(--primary);
+}
+
+.timeline-item {
+    margin-bottom: 40px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.timeline-date {
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--primary);
+}
+
+.timeline-content {
+    background-color: var(--input);
+    padding: 15px;
+    border-radius: 4px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.timeline-item:before {
+    content: '';
+    position: absolute;
+    left: -10px;
+    top: 0;
+    width: 10px;
+    height: 10px;
+    background-color: var(--primary);
+    border-radius: 50%;
+}
+
+.project-pro {
+    padding-top: 40px;
+    text-align: center;
+}
+
+.project-pro h2 {
+    color: var(--primary);
+    margin-bottom: 20px;
+}
+
+.project-pro p {
+    font-size: 18px;
+    line-height: 1.5;
+}
+.banner-alternance {
+    background: linear-gradient(90deg, #1e3c72, #2a5298); /* dégradé bleu moderne */
+    color: #fff;
+    text-align: center;
+    padding: 15px 20px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    margin: 20px auto;
+    max-width: 900px;
+  }
+  .banner-alternance strong {
+    font-weight: 700;
+    color: #ffd700; /* jaune pour mettre en valeur */
+  }
+  

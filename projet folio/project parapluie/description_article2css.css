@@ -1,0 +1,211 @@
+*{
+	padding: 0%;
+	margin: 0%;
+	box-sizing: border-box;
+	font-family: sans-serif;
+}
+body{
+	background-color: #fff;
+}
+.barinfo{
+	height: 30px;
+	margin-bottom: 0.1cm;
+	background-color: black;
+}
+nav{
+	height: 80px;
+	background:black;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0px 50px 0px 100px;
+}
+nav .logo{
+	font-size: 33px;
+	color: #fff;
+	font-weight: 700px;
+}
+nav ul li{
+	margin: 0 10px;
+}
+nav ul{
+	display: flex;
+	list-style: none;
+}
+nav ul li a{
+	color: #fff;
+	text-decoration: none;
+	font-size: 18px;
+	font-weight: 550;
+	letter-spacing: 1px;
+	padding: 8px 10px;
+	border-radius: 5px;
+	transition: all 0.3s ease;
+}
+nav ul li a:hover{
+	color: #834BE3;
+	background: bisque;
+}
+nav ul li a.active{
+	color: black;
+	background: #fff;
+}
+
+@media (max-width: 940px) {
+nav ul{
+	position: fixed;
+	top: 80px;
+	left: 0;
+	background: #fff;
+	height: 100vh;
+	width: 100%;
+	display: block;
+	text-align: center;
+}
+nav ul li{
+	margin: 40px 0;
+}
+nav ul li {
+	font-size: 20px;
+	display: block;
+}
+nav ul li a:hover,
+nav ul li a.active{
+	color: black;
+	background: none;
+}
+}
+.logo{
+	color: black;
+	font-size: large;
+}
+/*barrre de recherche */
+.search-container {
+	display: flex;
+	margin-right: 3cm;
+	margin-top: -1%;
+}
+
+.search-input {
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 5px 0 0 5px;
+}
+
+.search-button {
+	padding: 10px;
+	background-color: white;
+	color: black;
+	border: 1px solid white;
+	border-radius: 0 5px 5px 0;
+	cursor: pointer;
+}
+.alert{
+	color: red;
+	text-align: center;
+}
+
+.imgdehaut{
+	margin: 1cm;
+}
+.newcoll{
+	text-align: center;
+	margin-top: 1.5cm;
+}
+.articles{
+	margin-top: 1cm;
+	margin: 1cm;
+	text-align: center;
+}
+.articles h2{
+	margin-top: 0.6cm;
+}
+.articles p{
+	margin-top: 0.5cm;
+}
+
+														/*mon bouton ajouter au panier */
+.ajouter-au-panier {
+    background-color: transparent;
+    color: white;
+    border: 2px solid black;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+	background-color: black;
+	margin-top: 0.3cm;
+}
+
+.ajouter-au-panier:hover {
+    background-color: #834BE3;
+    color: white;
+}
+
+
+/*css pour gestions des images*/
+
+
+.article1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.image-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px; 
+}
+
+.image-container img {
+    width: 300px; 
+    height: auto; 
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.image-container img:hover {
+    transform: scale(1.2);
+}
+
+.image-container img.enlarged {
+    width: 400px; 
+    height: auto; 
+    cursor: zoom-out;
+}
+
+.article-details {
+    text-align: justify;
+    margin-left: 20px;
+}
+
+/*pied de page */
+
+.piedpage{
+	height: 400px;
+	background-color: black;
+  }
+ 
+  .avantpied{
+	height: 150px;
+	background-color:#C0C0C0;
+	margin-top: 2cm;
+	display: flex;
+  }
+.imagemap {
+	margin-top: 0.8cm;
+	margin-left: 4cm;
+}
+.picon1{
+	margin-top: 0.1cm;
+	margin-left: 4cm;
+}
+.piedpage h3{
+	color: #000000;
+	margin-left:2cm;
+	margin-top: 1cm;
+}
+.nosprofils{
+	text-decoration: none;
+}

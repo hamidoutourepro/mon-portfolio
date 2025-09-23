@@ -1,0 +1,94 @@
+<html>
+<head>
+    <title>Article</title>
+    <link rel="stylesheet" href="pagearticle.css">
+</head>
+<body>
+
+    <div class="barinfo">
+        <p class="alert">BONNE FÊTE DE NOEL</p>
+    </div>
+
+    <nav>
+        <a href="accueil.html">
+            <h2 class="logo"><img src="Logo-MAISON-PIGANIOL.jpg" alt="logo" width="60"></h2>
+        </a>
+        <ul>
+            <div class="search-container">
+                <input type="text" class="search-input" placeholder="Rechercher...">
+                <button class="search-button">Rechercher</button>
+            </div>
+            <li><a href="article.html">ARTICLE</a></li>
+            <li><a href="nouvellecol.html">NEW COLLECTION</a></li>
+            <li><a href="apropos.html">A PROPOS</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+            <a href="pannier.html">
+                <li><img src="panier.png" alt="icon de panier" width="30"></li>
+            </a>
+        </ul>
+    </nav>
+
+    <div class="article1">
+        <div class="image-container">
+            <img id="article-image" src="para.jpg" alt="Article 1">
+            
+        </div>
+        <div class="article-details">
+            <h2>ISMAEL</h2>
+            <br>
+            <p>
+              Un parapluie classique d'une très belle facture qui saura servir votre élégance en toute occasion <br>
+
+              Le parapluie L'Aurillac fait partie des parapluies de luxe fabriqués par la Maison Piganiol à Aurillac dans le Cantal.<br>
+              
+              Des finitions haut de gamme pour ce parapluie de luxe, avec des aiguillettes en laiton, un mât en bois de châtaignier, une poignée en bois courbé.<br>
+              
+              Une toile 100% coton qui vous offre un parapluie noir d'un grand classicisme qui saura vous accompagner en toutes circonstances.<br>
+              
+              La version femme du parapluie L'Aurillac bénéficie d'un poids allégé par rapport à la version homme du même parapluie.<br>
+              
+              Un parapluie emblématique de la Maison Piganiol à s'offrir ou à offrir à toutes les mamans !<br> <br> Prix : 50$
+            </p>
+            <button>Ajouter au panier</button>
+        </div>
+    </div>
+    <script>
+        // JavaScript pour agrandir l'image au clic //
+        const articleImage = document.getElementById('article-image');
+        articleImage.addEventListener('click', function() {
+            this.classList.toggle('enlarged');
+        });
+    </script>
+
+   <footer>
+    <div class="piedpage">
+      <div class="avantpied">
+        <div>
+          <img class="imagemap" src="espace-reserve.png" alt="image de la map" width="50">
+          <p class="picon1">Fabriqué en France
+            <br> depuis 1884
+          </p>
+        </div>
+        <div>
+          <img class="imagemap" src="paiement-securise.png" alt="image de la paiement-securise" width="50">
+          <p class="picon1">Paiement <br>
+            100% sécurisé</p>
+        </div>
+        <div>
+          <img class="imagemap" src="garantie.png" alt="image de la garantie" width="50">
+          <p class="picon1">Garantie 2 ans</p>
+        </div>
+        <div>
+          <img class="imagemap" src="annuler.png" alt="image de annuler" width="50">
+          <p class="Echanges">Echanges et retours prolongés <br>jusqu'au 14 janvier ! <br>1er échange gratuit</p>
+        </div>
+        <div>
+          <img class="imagemap" src="parametres-mobiles.png" alt="image de annuler" width="50">
+          <p class="picon1"><a href="" class="nosprofils">ISMAEL</a></p>
+          <p class="picon1"><a href="" class="nosprofils">HAMIDOU</a></p>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

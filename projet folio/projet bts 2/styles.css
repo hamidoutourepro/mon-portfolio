@@ -1,0 +1,370 @@
+/* Réinitialisation des marges et paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corps de la page */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Navigation */
+nav {
+    background-color: #333;
+    color: white;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .logo {
+    color: #fff;
+    font-size: 28px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    background-color: #834BE3;
+    color: #fff;
+}
+
+/* Header */
+header {
+    background-color: #333;
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+header .hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+header .hero p {
+    font-size: 20px;
+}
+
+/* Section Introduction */
+.intro {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #fff;
+    margin-bottom: 30px;
+}
+
+.intro h2 {
+    font-size: 32px;
+    color: #834BE3;
+}
+
+.intro p {
+    font-size: 18px;
+    color: #666;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Section Articles */
+.articles {
+    padding: 40px 20px;
+    background-color: #fff;
+    margin-bottom: 30px;
+}
+
+.articles h2 {
+    text-align: center;
+    font-size: 32px;
+    color: #834BE3;
+    margin-bottom: 20px;
+}
+
+.article-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 colonnes */
+    gap: 10px; /* Réduction de l'espace entre les articles */
+}
+
+.article-list article {
+    border: 1px solid #ddd; /* Bordure légère */
+    padding: 15px; /* Espace interne pour les contenus */
+    background-color: #f9f9f9; /* Couleur de fond douce */
+    border-radius: 8px; /* Coins arrondis pour une meilleure esthétique */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Ombre subtile pour les articles */
+    margin-top: 40px;
+}
+
+.article-list article img {
+    margin-bottom: 10px; /* Espace entre l'image et le titre */
+    border-radius: 5px; /* Coins arrondis pour les images */
+}
+
+.article-list article h3 {
+    margin: 10px 0; /* Espace autour du titre */
+    font-size: 1.1em; /* Taille de police ajustée pour le titre */
+}
+
+.article-list article p {
+    margin: 0; /* Retrait des marges par défaut des paragraphes */
+    font-size: 0.95em; /* Taille légèrement réduite pour le texte */
+    line-height: 1.5; /* Hauteur de ligne pour lisibilité */
+}
+
+
+.article-list article a {
+    color: #834BE3;
+    text-decoration: none;
+}
+
+.article-list article a:hover {
+    text-decoration: underline;
+}
+/* Nouvelle section : À propos */
+.about {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #fff;
+    margin-bottom: 30px;
+}
+
+.about h2 {
+    font-size: 32px;
+    color: #834BE3;
+}
+
+.about p {
+    font-size: 18px;
+    color: #666;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    font-size: 16px;
+}
+
+/* Réinitialisation des marges et paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corps de la page */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .logo a {
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.navbar .menu a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.navbar .menu a:hover {
+    color: #834BE3;
+}
+
+/* Section Solutions */
+.solutions {
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 20px auto;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.solutions h2 {
+    text-align: center;
+    font-size: 32px;
+    color: #834BE3;
+    margin-bottom: 20px;
+}
+
+.solutions p {
+    text-align: center;
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.solution-category {
+    margin-bottom: 40px;
+}
+
+.solution-category h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #834BE3;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.solution-category ul {
+    list-style-type: disc;
+    margin-left: 40px;
+    font-size: 16px;
+    color: #666;
+}
+
+.solution-category ul li {
+    margin-bottom: 10px;
+}
+
+.solution-category ul li strong {
+    color: #834BE3;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    font-size: 16px;
+}
+
+/**page contact **/
+.contact-form {
+    text-align: left;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: #333;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: #333;
+    transition: border 0.3s;
+}
+
+input:focus,
+textarea:focus {
+    border-color:#834BE3;
+    outline: none;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.btn-submit {
+    display: inline-block;
+    background-color: #834BE3;
+    color: white;
+    padding: 0.8rem 2rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.btn-submit:hover {
+    background-color: #834BE3;
+}
+
+/* Coordonnées */
+.contact-info {
+    margin-top: 2rem;
+    text-align: left;
+}
+
+.contact-info h2 {
+    font-size: 1.5rem;
+    color: #2c3e50;
+    margin-bottom: 1rem;
+}
+
+.contact-info ul {
+    list-style: none;
+    padding: 0;
+    line-height: 1.8;
+}
+
+.contact-info li {
+    color: #666;
+}
+
+.contact-info li strong {
+    color: #333;
+}
+
+/* Footer */
+footer {
+    background-color: #834BE3;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}

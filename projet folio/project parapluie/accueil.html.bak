@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Parapluie</title>
+  <link rel="stylesheet" href="accueil.css">
+</head>
+
+<body>
+
+  <body>
+    <div class="barinfo">
+        <p class="alert"> BONNE FÊTE DE NOEL </p>
+      </div>
+    </div>
+    <nav>
+      <a href="accueil.html">
+        <h2 class="logo"><img src="Logo-MAISON-PIGANIOL.jpg" alt="logo" width="60"></h2></a>
+      <uL>
+        <div class="search-container">
+          <input type="text" class="search-input" placeholder="Rechercher...">
+          <button class="search-button">Rechercher</button>
+      </div>
+        <li><a href="article.html">ARTICLE</a></li>
+        <li><a href="nouvellecol.html">NEW COLLECTION</a></li>
+        <li><a href="apropos.html">A PROPOS</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
+        <a href="pannier.html"><li><img src="panier.png" alt="icon de pannier" width="30"></li> </a>
+      </uL>
+    </nav>
+    <div class="imgdehaut">
+      <img src="imagehaut.jpg" alt="mon image une" width="100%" height="100%">
+    </div>
+    <h2 class="newcoll">NOUVELLE COLLECTION </h2>
+    <div class="articles-container">
+      <!-- Article 1 -->
+      <div class="articles">
+        <a href="description_article1.html" class="article">
+          <img src="articleacc.jpg" alt="Article 1" width="85%">
+        </a>
+        <h2>Parapluie femme canne <br>DOUBLE BELLE EPOQUE</h2>
+        <p>Prix : $19.99</p>
+        <button class="ajouter-au-panier">Ajouter au panier</button>
+      </div>
+      <!-- Article 2 -->
+      <div class="articles">
+        <a href="description_article2.html" class="article">
+          <img src="articleacc3.jpg" alt="Article 2" width="85%">
+        </a>
+        <h2>Autre article</h2>
+        <p>Prix : $29.99</p>
+        <button class="ajouter-au-panier">Ajouter au panier</button>
+      </div>
+      <!-- Article 3-->
+      <div class="articles">
+        <a href="description_article2.html" class="article">
+          <img src="articleacc4.jpg" alt="Article 2" width="85%">
+        </a>
+        <h2>Autre article</h2>
+        <p>Prix : $29.99</p>
+        <button class="ajouter-au-panier">Ajouter au panier</button>
+      </div>
+      <!-- Article 3-->
+      <div class="articles">
+        <a href="description_article2.html" class="article">
+          <img src="articleacc5.jpg" alt="Article 2" width="85%">
+        </a>
+        <h2>Autre article</h2>
+        <p>Prix : $29.99</p>
+        <button class="ajouter-au-panier">Ajouter au panier</button>
+      </div>
+    </div>
+    <div>
+      <a href="nouvellecol.html"><button class="decouvrir">DECOUVRIR</button></a>
+    </div>
+    <div class="video">
+      <video controls width="100%">
+        <source src="Maison Piganiol vidéo de présentation de la manufacture de parapluies.mp4" type="video/mp4">
+      </video>
+    </div>
+    <div class="deuxlignes">
+      <div class="element">
+        <img src="Logo-MAISON-PIGANIOL.jpg" alt="image de div " width="30%">
+        <h2>
+          <i>La Maison Piganiol : <br>fabricant de parapluie haut de gamme & made in France</i>
+        </h2>
+        <p>
+          <strong><i>La Maison Piganiol : fabricant de parapluie haut de gamme & made in France</i></strong>
+          Avec plus de 135 années dédiées à la fabrication de parapluies et riche de son patrimoine, la société Piganiol
+          a conservé son savoir-faire artisanal et ses valeurs. Cinq générations se sont succédé à sa tête pour en faire
+          un des leaders européens du parapluie haut-de-gamme. Piganiol est désormais tourné vers l'avenir et innove
+          dans le parapluie de luxe. Venez découvrir au fil des pages nos parapluies L'Aurillac, nos parapluies haut de
+          gamme, alliant la tradition d'un savoir-faire séculaire et la créativité d'un accessoire de mode, ainsi que
+          des parapluies femme et des parapluies homme originaux et raffinés. <br> <br>
+
+          <strong><i>Des parapluies fabriqués en France</i></strong>
+          Riche de son héritage, la Maison Piganiol, manufacture de parapluies, perpétue depuis 1884 un savoir-faire
+          séculaire et s'engage pour maintenir une tradition en proposant des parapluies français uniques et créatifs.
+          Le Ministère de l'Economie lui a d'ailleurs décerné depuis 2012 le label "Entreprise du Patrimoine Vivant".
+          <br><br>
+
+          <strong><i>La qualité et l'élégance d'une grande marque française du patrimoine vivant</i></strong>
+          C’est dans nos ateliers, à Aurillac au cœur du Cantal, que sont confectionnés avec amour les parapluies
+          Piganiol. Nous sélectionnons chaque matière première avec soin pour en faire des parapluies à la hauteur du
+          savoir-faire français. Grâce à des matériaux innovants, nos parapluies sont étudiés pour résister au temps et
+          aux tourments. Ainsi nos parapluies conjuguent le charme de l’artisanat à la rigueur d’une fabrication
+          manuelle.
+
+          Le parapluie Piganiol est fait pour durer et vous accompagner le plus longtemps possible au gré des
+          intempéries. Nous apportons une réelle attention à la qualité de nos produits et chaque parapluie est fabriqué
+          avec minutie, qu’il s’agisse d’un parapluie doublé, d’un parapluie original ou encore d’une ombrelle. <br><br>
+
+          <strong><i>Différents modèles de parapluies de qualité</i></strong>
+          Que vous soyez à la recherche d’un parapluie femme ou d’un parapluie homme, d’un parapluie canne ou d’un mini
+          parapluie, d’un parapluie automatique ou semi-automatique… Vous trouverez votre bonheur ici. Nous offrons une
+          réelle diversité de gamme allant du parapluie transparent au parapluie cloche, du parapluie à motifs au
+          parapluie uni, du parapluie traditionnel au parapluie de mariage… <br> <br>
+
+          Nous disposons également de parapluies pour les enfants, spécialement conçus pour répondre aux besoins des
+          plus jeunes. Ce type de parapluie artisanal, issu du catalogue de notre marque de parapluie haut de gamme, se
+          décline en divers modèles et coloris, à choisir en famille et à découvrir grâce au lookbook. Vous préférez
+          sélectionner un parapluie de qualité en parcourant nos collections ? Rendez-vous dans notre rubrique dédiée.
+          <br> <br>
+        </p>
+      </div>
+      <div class="element">
+        <img src="aurillac-piganiol.jpg" alt="image du div" width="30%">
+        <h2>
+          <i>Un parapluie artisanal pour <br>tous les styles et besoins</i>
+        </h2>
+        <p>
+          Les parapluies femme de notre Maison sont soigneusement pensés par nos stylistes pour satisfaire vos goûts et
+          vos envies. Nous travaillons quotidiennement pour créer des parapluies luxueux au design singulier. Chaque
+          parapluie français de la gamme féminine est conçu avec soin jusqu’au moindre détail, de façon à sublimer
+          l’élégance naturelle des femmes. Qu’il s’agisse d’un parapluie cloche transparent, d’un parapluie uni ou
+          encore d’un parapluie pliant, tous nos modèles de parapluies de luxe pour femme allient solidité et
+          délicatesse pour un ensemble harmonieux. <br> <br>
+
+          Nos parapluies homme varient entre grand classique, tradition et modernité. Audace ou sobriété, chacun y
+          trouve son compte. Vous trouverez dans cette collection de parapluies haut de gamme des modèles de parapluies
+          de golf ainsi que des parapluies pliants. Nous proposons aussi à ces messieurs un choix de parapluies cannes
+          et de parapluies noirs, axés sur l’élégance et le charisme. <br> <br>
+
+          <strong><i>Optez pour une marque de parapluie traditionnelle</i></strong>
+          Les parapluies traditionnels de la marque de parapluie Piganiol sont des créations originales développées
+          artisanalement par nos fabricants de parapluies. <br> <br>
+
+          En flânant sur notre site découvrez notre modèle incontournable, le parapluie l’Aurillac. Disponible dans de
+          nombreux coloris, sa toile 100% coton égaiera vos journées de pluie tout en vous apportant confort et
+          protection. Une poignée en bois de châtaignier et des finitions en laitons, telles sont les caractéristiques
+          du parapluie l’Aurillac qui rendent ce classique élégant et indémodable. <br> <br>
+
+          Le parapluie Piganiol c’est aussi l’iconique parapluie de Berger à adopter lors de balades à la campagne ou en
+          montagne sans craindre l’averse. Disponible en 8 coloris, le parapluie de Berger est l’emblème de notre
+          patrimoine et de notre savoir-faire depuis plus de 135 ans. C’est l’un de nos nombreux parapluies de qualité,
+          l’un des symboles d’une marque de parapluies reconnue et éprouvée en France et dans toute l’Europe. <br> <br>
+
+          Un fabricant de parapluie à votre écoute
+          Envie d’offrir un cadeau singulier ? Envie d’avoir un parapluie unique ? Notre maison vous propose un
+          parapluie personnalisé ! N’hésitez pas à nous faire part de vos demandes, nous ferons au mieux pour les
+          réaliser. Selon vos préférences et vos exigences, nos équipes seront à même de réaliser un parapluie artisanal
+          totalement personnalisé, un parapluie de qualité que vous conserverez de nombreuses années. Contactez votre
+          parapluitier Piganiol pour concevoir votre parapluie haut de gamme sur mesure. <br> <br>
+
+          <strong>Le parapluie Piganiol, c’est le parapluie français par excellence, le parapluie de luxe, soigné
+            jusqu’aux finitions, le parapluie qui vous ressemble. </strong> <br> <br>
+        </p>
+      </div>
+    </div>
+  </body>
+  <footer>
+    <div class="piedpage">
+      <div class="avantpied">
+        <div>
+          <img class="imagemap" src="espace-reserve.png" alt="image de la map" width="50">
+          <p class="picon1">Fabriqué en France
+            <br> depuis 1884
+          </p>
+        </div>
+        <div>
+          <img class="imagemap" src="paiement-securise.png" alt="image de la paiement-securise" width="50">
+          <p class="picon1">Paiement <br>
+            100% sécurisé</p>
+        </div>
+        <div>
+          <img class="imagemap" src="garantie.png" alt="image de la garantie" width="50">
+          <p class="picon1">Garantie 2 ans</p>
+        </div>
+        <div>
+          <img class="imagemap" src="annuler.png" alt="image de annuler" width="50">
+          <p class="Echanges">Echanges et retours prolongés <br>jusqu'au 14 janvier ! <br>1er échange gratuit</p>
+        </div>
+        <div>
+          <img class="imagemap" src="parametres-mobiles.png" alt="image de annuler" width="50">
+          <p class="picon1"><a href="" class="nosprofils">ISMAEL</a></p>
+          <p class="picon1"><a href="" class="nosprofils">HAMIDOU</a></p>
+        </div>
+      </div>
+    </div>
+  </footer>
+</html

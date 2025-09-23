@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A propos de nous </title>
+</head>
+<body>
+    <nav>
+        <a href="accueil.html">
+          <h2 class="logo"><img src="Logo-MAISON-PIGANIOL.jpg" alt="logo" width="60"></h2>
+        </a>
+        <uL>
+          <div class="search-container">
+            <input type="text" class="search-input" placeholder="Rechercher...">
+            <button class="search-button">Rechercher</button>
+        </div>
+          <li><a href="article.html">ARTICLE</a></li>
+          <li><a href="nouvellecol.html">NEW COLLECTION</a></li>
+          <li><a href="apropos.html">A PROPOS</a></li>
+          <li><a href="contact.html">CONTACT</a></li>
+          <a href="pannier.html"><li><img src="panier.png" alt="icon de pannier" width="30"></li> </a>
+        </uL>
+      </nav>
+    <h1>A propos de nous </h1>
+    <p>
+        La Maison Piganiol, avec plus de 135 ans d'expérience, est un fabricant de parapluies haut de gamme basé en France. 
+        <br>Elle perpétue un savoir-faire artisanal et s'engage à maintenir une tradition en produisant des parapluies français uniques et créatifs. 
+        <br>La société a été reconnue par le label <span>Entreprise du Patrimoine Vivant</span> <br> <br>
+        Les parapluies Piganiol sont fabriqués avec soin dans leurs ateliers à Aurillac, en utilisant des matériaux de haute qualité. 
+        <br>Ils allient charme artisanal, rigueur de la fabrication manuelle et résistance aux intempéries. 
+        <br>La gamme comprend divers modèles pour femmes, hommes et enfants, offrant une grande diversité de styles, du traditionnel au moderne. <br> <br>
+        Les parapluies femme sont conçus avec attention par des stylistes pour satisfaire divers goûts, alliant solidité et délicatesse.
+        <br> Les parapluies homme offrent une variété de styles, de l'audace à la sobriété. 
+        <br>La collection inclut des parapluies de golf, des parapluies pliants, des cannes et des modèles noirs axés sur l'élégance. <br><br>
+        Piganiol propose des parapluies traditionnels, dont l'emblématique "l'Aurillac", un classique élégant et indémodable. 
+        <br>Un autre symbole est le parapluie de Berger, disponible en plusieurs coloris, représentant le patrimoine de la marque. <br> <br>
+        La Maison Piganiol offre également des parapluies personnalisés, permettant aux clients de créer un parapluie unique selon leurs préférences.
+        <br> Leur engagement envers la qualité et l'individualité se reflète dans chaque parapluie Piganiol, un accessoire de luxe soigné jusqu'aux finitions, <br>
+         représentant l'excellence du parapluie français. <br><br>
+    </p>
+</body>
+<style>
+    *{
+	padding: 0%;
+	margin: 0%;
+	box-sizing: border-box;
+	font-family: sans-serif;
+}
+body{
+	background-color: #fff;
+}
+.barinfo{
+	height: 30px;
+	margin-bottom: 0.1cm;
+	background-color: black;
+}
+nav{
+	height: 80px;
+	background:black;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0px 50px 0px 100px;
+}
+nav .logo{
+	font-size: 33px;
+	color: #fff;
+	font-weight: 700px;
+}
+nav ul li{
+	margin: 0 10px;
+}
+nav ul{
+	display: flex;
+	list-style: none;
+}
+nav ul li a{
+	color: #fff;
+	text-decoration: none;
+	font-size: 18px;
+	font-weight: 550;
+	letter-spacing: 1px;
+	padding: 8px 10px;
+	border-radius: 5px;
+	transition: all 0.3s ease;
+}
+nav ul li a:hover{
+	color: #834BE3;
+	background: bisque;
+}
+nav ul li a.active{
+	color: black;
+	background: #fff;
+}
+
+@media (max-width: 940px) {
+nav ul{
+	position: fixed;
+	top: 80px;
+	left: 0;
+	background: #fff;
+	height: 100vh;
+	width: 100%;
+	display: block;
+	text-align: center;
+}
+nav ul li{
+	margin: 40px 0;
+}
+nav ul li {
+	font-size: 20px;
+	display: block;
+}
+nav ul li a:hover,
+nav ul li a.active{
+	color: black;
+	background: none;
+}
+}
+.logo{
+	color: black;
+	font-size: large;
+}
+/*barrre de recherche */
+.search-container {
+	display: flex;
+	margin-right: 3cm;
+	margin-top: -1%;
+}
+
+.search-input {
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 5px 0 0 5px;
+}
+
+.search-button {
+	padding: 10px;
+	background-color: white;
+	color: black;
+	border: 1px solid white;
+	border-radius: 0 5px 5px 0;
+	cursor: pointer;
+}
+.alert{
+	color: red;
+	text-align: center;
+}
+    h1{
+        text-align: center;
+        margin: 1cm;
+    }
+    p{
+        text-align: justify;
+        margin-top: 3cm;
+        margin-left: 9cm;
+        font-size: large;
+    }
+    span{
+        color: olivedrab;
+    }
+
+</style>
+</html>
